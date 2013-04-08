@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2C1F7EB17115D6C004BFFDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1F7EA17115D6C004BFFDD /* UIKit.framework */; };
+		E2C1F7ED17115D6C004BFFDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1F7EC17115D6C004BFFDD /* Foundation.framework */; };
+		E2C1F7EF17115D6C004BFFDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1F7EE17115D6C004BFFDD /* CoreGraphics.framework */; };
+		E2C1F7F517115D6C004BFFDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F7F317115D6C004BFFDD /* InfoPlist.strings */; };
+		E2C1F7F717115D6C004BFFDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1F7F617115D6C004BFFDD /* main.m */; };
+		E2C1F7FB17115D6C004BFFDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1F7FA17115D6C004BFFDD /* AppDelegate.m */; };
+		E2C1F7FD17115D6C004BFFDD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F7FC17115D6C004BFFDD /* Default.png */; };
+		E2C1F7FF17115D6C004BFFDD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F7FE17115D6C004BFFDD /* Default@2x.png */; };
+		E2C1F80117115D6C004BFFDD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F80017115D6C004BFFDD /* Default-568h@2x.png */; };
+		E2C1F81617115E44004BFFDD /* longPress.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F80A17115E44004BFFDD /* longPress.png */; };
+		E2C1F81717115E44004BFFDD /* pan.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F80B17115E44004BFFDD /* pan.png */; };
+		E2C1F81817115E44004BFFDD /* pinch.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F80C17115E44004BFFDD /* pinch.png */; };
+		E2C1F81917115E44004BFFDD /* rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F80D17115E44004BFFDD /* rotate.png */; };
+		E2C1F81A17115E44004BFFDD /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F80E17115E44004BFFDD /* swipe.png */; };
+		E2C1F81B17115E44004BFFDD /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F80F17115E44004BFFDD /* tap.png */; };
+		E2C1F81C17115E44004BFFDD /* longPress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F81017115E44004BFFDD /* longPress@2x.png */; };
+		E2C1F81D17115E44004BFFDD /* rotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F81117115E44004BFFDD /* rotate@2x.png */; };
+		E2C1F81E17115E44004BFFDD /* pinch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F81217115E44004BFFDD /* pinch@2x.png */; };
+		E2C1F81F17115E44004BFFDD /* pan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F81317115E44004BFFDD /* pan@2x.png */; };
+		E2C1F82017115E44004BFFDD /* swipe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F81417115E44004BFFDD /* swipe@2x.png */; };
+		E2C1F82117115E44004BFFDD /* tap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C1F81517115E44004BFFDD /* tap@2x.png */; };
+		E2C1F82417115E91004BFFDD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1F82317115E91004BFFDD /* RootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E2C1F7E717115D6C004BFFDD /* UIGestureRecognizers_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIGestureRecognizers_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C1F7EA17115D6C004BFFDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E2C1F7EC17115D6C004BFFDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E2C1F7EE17115D6C004BFFDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E2C1F7F217115D6C004BFFDD /* UIGestureRecognizers_Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIGestureRecognizers_Demo-Info.plist"; sourceTree = "<group>"; };
+		E2C1F7F417115D6C004BFFDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E2C1F7F617115D6C004BFFDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2C1F7F817115D6C004BFFDD /* UIGestureRecognizers_Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizers_Demo-Prefix.pch"; sourceTree = "<group>"; };
+		E2C1F7F917115D6C004BFFDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2C1F7FA17115D6C004BFFDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2C1F7FC17115D6C004BFFDD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E2C1F7FE17115D6C004BFFDD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E2C1F80017115D6C004BFFDD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E2C1F80A17115E44004BFFDD /* longPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = longPress.png; sourceTree = "<group>"; };
+		E2C1F80B17115E44004BFFDD /* pan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pan.png; sourceTree = "<group>"; };
+		E2C1F80C17115E44004BFFDD /* pinch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinch.png; sourceTree = "<group>"; };
+		E2C1F80D17115E44004BFFDD /* rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotate.png; sourceTree = "<group>"; };
+		E2C1F80E17115E44004BFFDD /* swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe.png; sourceTree = "<group>"; };
+		E2C1F80F17115E44004BFFDD /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
+		E2C1F81017115E44004BFFDD /* longPress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "longPress@2x.png"; sourceTree = "<group>"; };
+		E2C1F81117115E44004BFFDD /* rotate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rotate@2x.png"; sourceTree = "<group>"; };
+		E2C1F81217115E44004BFFDD /* pinch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinch@2x.png"; sourceTree = "<group>"; };
+		E2C1F81317115E44004BFFDD /* pan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pan@2x.png"; sourceTree = "<group>"; };
+		E2C1F81417115E44004BFFDD /* swipe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe@2x.png"; sourceTree = "<group>"; };
+		E2C1F81517115E44004BFFDD /* tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap@2x.png"; sourceTree = "<group>"; };
+		E2C1F82217115E91004BFFDD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E2C1F82317115E91004BFFDD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2C1F7E417115D6C004BFFDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C1F7EB17115D6C004BFFDD /* UIKit.framework in Frameworks */,
+				E2C1F7ED17115D6C004BFFDD /* Foundation.framework in Frameworks */,
+				E2C1F7EF17115D6C004BFFDD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2C1F7DE17115D6C004BFFDD = {
+			isa = PBXGroup;
+			children = (
+				E2C1F7F017115D6C004BFFDD /* UIGestureRecognizers_Demo */,
+				E2C1F7E917115D6C004BFFDD /* Frameworks */,
+				E2C1F7E817115D6C004BFFDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2C1F7E817115D6C004BFFDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1F7E717115D6C004BFFDD /* UIGestureRecognizers_Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2C1F7E917115D6C004BFFDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1F7EA17115D6C004BFFDD /* UIKit.framework */,
+				E2C1F7EC17115D6C004BFFDD /* Foundation.framework */,
+				E2C1F7EE17115D6C004BFFDD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2C1F7F017115D6C004BFFDD /* UIGestureRecognizers_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1F80817115D89004BFFDD /* ViewControllers */,
+				E2C1F80717115D80004BFFDD /* Resources */,
+				E2C1F7F117115D6C004BFFDD /* Supporting Files */,
+			);
+			path = UIGestureRecognizers_Demo;
+			sourceTree = "<group>";
+		};
+		E2C1F7F117115D6C004BFFDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1F7F917115D6C004BFFDD /* AppDelegate.h */,
+				E2C1F7FA17115D6C004BFFDD /* AppDelegate.m */,
+				E2C1F7F217115D6C004BFFDD /* UIGestureRecognizers_Demo-Info.plist */,
+				E2C1F7F317115D6C004BFFDD /* InfoPlist.strings */,
+				E2C1F7F617115D6C004BFFDD /* main.m */,
+				E2C1F7F817115D6C004BFFDD /* UIGestureRecognizers_Demo-Prefix.pch */,
+				E2C1F7FC17115D6C004BFFDD /* Default.png */,
+				E2C1F7FE17115D6C004BFFDD /* Default@2x.png */,
+				E2C1F80017115D6C004BFFDD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2C1F80717115D80004BFFDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1F80917115E2E004BFFDD /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2C1F80817115D89004BFFDD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1F82217115E91004BFFDD /* RootViewController.h */,
+				E2C1F82317115E91004BFFDD /* RootViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E2C1F80917115E2E004BFFDD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1F80A17115E44004BFFDD /* longPress.png */,
+				E2C1F80B17115E44004BFFDD /* pan.png */,
+				E2C1F80C17115E44004BFFDD /* pinch.png */,
+				E2C1F80D17115E44004BFFDD /* rotate.png */,
+				E2C1F80E17115E44004BFFDD /* swipe.png */,
+				E2C1F80F17115E44004BFFDD /* tap.png */,
+				E2C1F81017115E44004BFFDD /* longPress@2x.png */,
+				E2C1F81117115E44004BFFDD /* rotate@2x.png */,
+				E2C1F81217115E44004BFFDD /* pinch@2x.png */,
+				E2C1F81317115E44004BFFDD /* pan@2x.png */,
+				E2C1F81417115E44004BFFDD /* swipe@2x.png */,
+				E2C1F81517115E44004BFFDD /* tap@2x.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2C1F7E617115D6C004BFFDD /* UIGestureRecognizers_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2C1F80417115D6C004BFFDD /* Build configuration list for PBXNativeTarget "UIGestureRecognizers_Demo" */;
+			buildPhases = (
+				E2C1F7E317115D6C004BFFDD /* Sources */,
+				E2C1F7E417115D6C004BFFDD /* Frameworks */,
+				E2C1F7E517115D6C004BFFDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIGestureRecognizers_Demo;
+			productName = UIGestureRecognizers_Demo;
+			productReference = E2C1F7E717115D6C004BFFDD /* UIGestureRecognizers_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2C1F7DF17115D6C004BFFDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Duchy Software Ltd.";
+			};
+			buildConfigurationList = E2C1F7E217115D6C004BFFDD /* Build configuration list for PBXProject "UIGestureRecognizers_Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E2C1F7DE17115D6C004BFFDD;
+			productRefGroup = E2C1F7E817115D6C004BFFDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2C1F7E617115D6C004BFFDD /* UIGestureRecognizers_Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2C1F7E517115D6C004BFFDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C1F7F517115D6C004BFFDD /* InfoPlist.strings in Resources */,
+				E2C1F7FD17115D6C004BFFDD /* Default.png in Resources */,
+				E2C1F7FF17115D6C004BFFDD /* Default@2x.png in Resources */,
+				E2C1F80117115D6C004BFFDD /* Default-568h@2x.png in Resources */,
+				E2C1F81617115E44004BFFDD /* longPress.png in Resources */,
+				E2C1F81717115E44004BFFDD /* pan.png in Resources */,
+				E2C1F81817115E44004BFFDD /* pinch.png in Resources */,
+				E2C1F81917115E44004BFFDD /* rotate.png in Resources */,
+				E2C1F81A17115E44004BFFDD /* swipe.png in Resources */,
+				E2C1F81B17115E44004BFFDD /* tap.png in Resources */,
+				E2C1F81C17115E44004BFFDD /* longPress@2x.png in Resources */,
+				E2C1F81D17115E44004BFFDD /* rotate@2x.png in Resources */,
+				E2C1F81E17115E44004BFFDD /* pinch@2x.png in Resources */,
+				E2C1F81F17115E44004BFFDD /* pan@2x.png in Resources */,
+				E2C1F82017115E44004BFFDD /* swipe@2x.png in Resources */,
+				E2C1F82117115E44004BFFDD /* tap@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2C1F7E317115D6C004BFFDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C1F7F717115D6C004BFFDD /* main.m in Sources */,
+				E2C1F7FB17115D6C004BFFDD /* AppDelegate.m in Sources */,
+				E2C1F82417115E91004BFFDD /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2C1F7F317115D6C004BFFDD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2C1F7F417115D6C004BFFDD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2C1F80217115D6C004BFFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E2C1F80317115D6C004BFFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2C1F80517115D6C004BFFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIGestureRecognizers_Demo/UIGestureRecognizers_Demo-Prefix.pch";
+				INFOPLIST_FILE = "UIGestureRecognizers_Demo/UIGestureRecognizers_Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E2C1F80617115D6C004BFFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIGestureRecognizers_Demo/UIGestureRecognizers_Demo-Prefix.pch";
+				INFOPLIST_FILE = "UIGestureRecognizers_Demo/UIGestureRecognizers_Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2C1F7E217115D6C004BFFDD /* Build configuration list for PBXProject "UIGestureRecognizers_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2C1F80217115D6C004BFFDD /* Debug */,
+				E2C1F80317115D6C004BFFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2C1F80417115D6C004BFFDD /* Build configuration list for PBXNativeTarget "UIGestureRecognizers_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2C1F80517115D6C004BFFDD /* Debug */,
+				E2C1F80617115D6C004BFFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2C1F7DF17115D6C004BFFDD /* Project object */;
+}
