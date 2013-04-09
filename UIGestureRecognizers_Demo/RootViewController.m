@@ -65,6 +65,7 @@ typedef enum {
   
   for (int index = 0; index < [images count]; index++) {
     UIImageView *imageView = [[UIImageView alloc] initWithImage:images[index]];
+    [imageView setBounds:CGRectMake(0, 0, 150, 150)];
     [imageView setUserInteractionEnabled:YES];
     [imageView setCenter:[self offscreenPosition]];
     [imageView setTag:index+1];
