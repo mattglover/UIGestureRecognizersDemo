@@ -8,6 +8,7 @@
 
 #import "CTGestureRecognizer.h"
 #import "CMUnistrokeGestureRecognizer.h"
+#import "GestureRecognizers.h"
 
 @implementation CTGestureRecognizer
 
@@ -24,27 +25,16 @@ CGPoint strokeCTPoints[kStrokeCTPointsCount] = {
     {821.0f, 250.0f}, {822.0f, 250.0f}, {821.0f, 249.0f}
 };
 
-struct templatePath {
-    char *name;
-    unsigned int length;
-    CGPoint *points;
-};
-
-struct templatePath templatePaths[] = {
-    { "CT", kStrokeCTPointsCount, strokeCTPoints }
-};
-
 -(id)initWithTarget:(id)target action:(SEL)action
 {
     self = [super initWithTarget:target action:action];
     if (self) {
         UIBezierPath *ctBezierPath = [UIBezierPath bezierPath];
-        struct templatePath templatePath = templatePaths[0];
         
-        [ctBezierPath moveToPoint:templatePath.points[0]];
+        [ctBezierPath moveToPoint:strokeCTPoints[0]];
         
-        for (NSUInteger j=1; j<templatePath.length; j++) {
-            [ctBezierPath addLineToPoint:templatePath.points[j]];
+        for (NSUInteger j=1; j<kStrokeCTPointsCount; j++) {
+            [ctBezierPath addLineToPoint:strokeCTPoints[j]];
         }
         
         [self registerUnistrokeWithName:@"CTGesture" bezierPath:ctBezierPath];

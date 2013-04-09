@@ -15,6 +15,7 @@
 		447DF6101714B0B9001FFE46 /* CTGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 447DF60F1714B0B9001FFE46 /* CTGestureRecognizer.m */; };
 		447DF6141714B69F001FFE46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447DF6131714B69F001FFE46 /* QuartzCore.framework */; };
 		447DF6211714C673001FFE46 /* ctface.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 447DF6201714C673001FFE46 /* ctface.jpeg */; };
+		447DF6241714C7CB001FFE46 /* SPartyGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 447DF6231714C7CB001FFE46 /* SPartyGestureRecognizer.m */; };
 		E2C1F7EB17115D6C004BFFDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1F7EA17115D6C004BFFDD /* UIKit.framework */; };
 		E2C1F7ED17115D6C004BFFDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1F7EC17115D6C004BFFDD /* Foundation.framework */; };
 		E2C1F7EF17115D6C004BFFDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1F7EE17115D6C004BFFDD /* CoreGraphics.framework */; };
@@ -56,6 +57,8 @@
 		447DF6111714B0DC001FFE46 /* GestureRecognizers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureRecognizers.h; sourceTree = "<group>"; };
 		447DF6131714B69F001FFE46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		447DF6201714C673001FFE46 /* ctface.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ctface.jpeg; sourceTree = "<group>"; };
+		447DF6221714C7CB001FFE46 /* SPartyGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPartyGestureRecognizer.h; sourceTree = "<group>"; };
+		447DF6231714C7CB001FFE46 /* SPartyGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPartyGestureRecognizer.m; sourceTree = "<group>"; };
 		E2C1F7E717115D6C004BFFDD /* UIGestureRecognizers_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIGestureRecognizers_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C1F7EA17115D6C004BFFDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2C1F7EC17115D6C004BFFDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +143,8 @@
 				447DF60E1714B0B9001FFE46 /* CTGestureRecognizer.h */,
 				447DF60F1714B0B9001FFE46 /* CTGestureRecognizer.m */,
 				447DF6111714B0DC001FFE46 /* GestureRecognizers.h */,
+				447DF6221714C7CB001FFE46 /* SPartyGestureRecognizer.h */,
+				447DF6231714C7CB001FFE46 /* SPartyGestureRecognizer.m */,
 			);
 			path = GestureRecognizers;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				447DF6091714AEBA001FFE46 /* CMUnistrokeRecognizer.c in Sources */,
 				447DF60A1714AEBA001FFE46 /* CMUnistrokeRecognizerTypes.c in Sources */,
 				447DF6101714B0B9001FFE46 /* CTGestureRecognizer.m in Sources */,
+				447DF6241714C7CB001FFE46 /* SPartyGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
