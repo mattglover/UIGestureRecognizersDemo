@@ -7,6 +7,9 @@
 //
 
 #import "RootViewController.h"
+#import "CMUnistrokeRecognizer.h"
+#import "GestureRecognizers.h"
+#import <QuartzCore/QuartzCore.h>
 
 typedef enum {
   kGestureImageIndexTap = 1,
@@ -28,6 +31,7 @@ typedef enum {
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+    path = [UIBezierPath bezierPath];
   
   [self.view setBackgroundColor:[UIColor colorWithRed:200.0f/255.0f green:200.0f/255.0f blue:200.0f/255.0f alpha:1.0]];
   
@@ -51,6 +55,9 @@ typedef enum {
   // Taps
   // Display the relevent GestureImage - Depending on the number of 'taps'
   [self setupGesturesForView:self.view];
+    
+    //Additional Custom Recognizers
+    [self addCustomRecognizers];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -279,6 +286,79 @@ typedef enum {
 
 - (NSUInteger)supportedInterfaceOrientations {
   return UIInterfaceOrientationMaskLandscape;
+}
+
+
+#pragma mark - Custom Recognizers
+
+- (void)addCustomRecognizers
+{
+    //Hint: Draw a CT shape, as cursive
+    [self.view addGestureRecognizer:[[CTGestureRecognizer alloc] initWithTarget:self action:@selector(showCTView:)]];
+}
+
+-(void)showCTView:(CTGestureRecognizer*)gesture
+{
+    //We only want good CT's round these parts
+    if ([gesture.result.recognizedStrokeName isEqualToString:@"CTGesture"]
+        && gesture.result.recognizedStrokeScore>0.5) {
+        UIImageView *ctFace = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ctface.jpeg"]];
+        [ctFace setCenter:[self viewCenter]];
+        [self.view addSubview:ctFace];
+        CABasicAnimation *scaleX = [CABasicAnimation animationWithKeyPath:@"transform.scale.x"];
+        //this is not used, as the group provides the duration
+        scaleX.duration = 0;
+        scaleX.autoreverses = NO;
+        
+        scaleX.toValue = [NSNumber numberWithFloat:5.0];
+        scaleX.fromValue = [NSNumber numberWithFloat:0.25];
+        scaleX.removedOnCompletion = YES;
+        
+        CABasicAnimation *scaleY = [CABasicAnimation animationWithKeyPath:@"transform.scale.y"];
+        //this is not used, as the group provides the duration
+        scaleY.duration = 0;
+        scaleY.autoreverses = NO;
+        
+        scaleY.toValue = [NSNumber numberWithFloat:5.0];
+        scaleY.fromValue = [NSNumber numberWithFloat:0.25];
+        scaleY.removedOnCompletion = YES;
+        
+        CABasicAnimation *rotate = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+        rotate.fromValue         = [NSNumber numberWithFloat:-3.0];
+        rotate.toValue           = [NSNumber numberWithFloat:3.0];
+        rotate.duration          = 0;
+        rotate.timingFunction    = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        rotate.removedOnCompletion = YES;
+        rotate.autoreverses      = YES;
+        
+        //add in the translation animations
+        
+        NSArray* animationsArray = @[
+                                     scaleX,
+                                     scaleY,
+                                     rotate
+                                           ];
+        
+        CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+        animationGroup.duration = 0.5;
+        animationGroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+        animationGroup.animations = animationsArray;
+        animationGroup.delegate = self;
+        animationGroup.repeatCount = 5;
+        animationGroup.autoreverses = YES;
+        animationGroup.removedOnCompletion = YES;
+        [animationGroup setValue:ctFace.layer forKey:@"animationLayer"];
+        [ctFace.layer addAnimation:animationGroup forKey:@"CTAnimation"];
+        [animationGroup setDelegate:self];
+    }
+}
+
+-(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    CALayer *layer = [anim valueForKey:@"animationLayer"];
+    if (layer) {
+        [layer removeFromSuperlayer];
+    }
 }
 
 @end
