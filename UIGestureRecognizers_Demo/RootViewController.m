@@ -10,6 +10,7 @@
 #import "CMUnistrokeRecognizer.h"
 #import "GestureRecognizers.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIGestureRecognizer+Blocks.h"
 
 typedef enum {
   kGestureImageIndexTap = 1,
@@ -94,7 +95,17 @@ typedef enum {
     case 0: // self.view
       
       for (int tapNumber = 1; tapNumber <= [self.imageViews count]; tapNumber++) {
-        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showGestureImage:)];
+        
+        // Removed old recognizer
+        //UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showGestureImage:)];
+        
+        // Using new block based initializer for callback
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithBlock:^(UIGestureRecognizer *recognizer){
+            UITapGestureRecognizer *gesture = (UITapGestureRecognizer *)recognizer;
+            NSUInteger index = [gesture numberOfTapsRequired] -1;
+            [self showImageView:self.imageViews[index]];
+        }];
+          
         [tapGesture setNumberOfTapsRequired:tapNumber];
         
         for (UIGestureRecognizer *existingGesture in view.gestureRecognizers) {
@@ -153,14 +164,15 @@ typedef enum {
   [view addGestureRecognizer:resetLongPressGesture];
 }
 
-
-
 #pragma mark - UIGestureRecognizer Listeners
+
+/* Removed as this was moved into the callback block
 - (void)showGestureImage:(UITapGestureRecognizer *)gesture {
   
   NSUInteger index = [gesture numberOfTapsRequired] -1;
   [self showImageView:self.imageViews[index]];
 }
+*/
 
 - (void)resetView:(UITapGestureRecognizer *)gesture {
   
