@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FC14D6B1715819D005D8495 /* UIGestureRecognizer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC14D6A1715819D005D8495 /* UIGestureRecognizer+Blocks.m */; };
 		E2C1F7EB17115D6C004BFFDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1F7EA17115D6C004BFFDD /* UIKit.framework */; };
 		E2C1F7ED17115D6C004BFFDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1F7EC17115D6C004BFFDD /* Foundation.framework */; };
 		E2C1F7EF17115D6C004BFFDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1F7EE17115D6C004BFFDD /* CoreGraphics.framework */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FC14D691715819D005D8495 /* UIGestureRecognizer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+Blocks.h"; path = "UIGestureRecognizer+Blocks/UIGestureRecognizer+Blocks.h"; sourceTree = "<group>"; };
+		0FC14D6A1715819D005D8495 /* UIGestureRecognizer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+Blocks.m"; path = "UIGestureRecognizer+Blocks/UIGestureRecognizer+Blocks.m"; sourceTree = "<group>"; };
 		E2C1F7E717115D6C004BFFDD /* UIGestureRecognizers_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIGestureRecognizers_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C1F7EA17115D6C004BFFDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2C1F7EC17115D6C004BFFDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -141,6 +144,8 @@
 			children = (
 				E2C1F82217115E91004BFFDD /* RootViewController.h */,
 				E2C1F82317115E91004BFFDD /* RootViewController.m */,
+				0FC14D691715819D005D8495 /* UIGestureRecognizer+Blocks.h */,
+				0FC14D6A1715819D005D8495 /* UIGestureRecognizer+Blocks.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				E2C1F7F717115D6C004BFFDD /* main.m in Sources */,
 				E2C1F7FB17115D6C004BFFDD /* AppDelegate.m in Sources */,
 				E2C1F82417115E91004BFFDD /* RootViewController.m in Sources */,
+				0FC14D6B1715819D005D8495 /* UIGestureRecognizer+Blocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
